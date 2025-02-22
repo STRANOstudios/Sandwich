@@ -10,6 +10,10 @@ namespace Sandwich
     [HideMonoScript]
     public class Levels : MonoBehaviour
     {
+        const string NAME_DATA_FILE = "SandwichData";
+
+        #region Fields
+
         [Title("References")]
         [SerializeField, Required] private TMP_Text m_levelText = null;
         [SerializeField, Required] private List<SpawnInGrid> m_spawnInGrids = new();
@@ -25,6 +29,8 @@ namespace Sandwich
 
         [Button("Change Level")]
         public void NextLevel() => OnChangeLevel();
+
+        #endregion
 
         GridManager gridManager;
         ObjectPooler objectPooler;
@@ -57,6 +63,11 @@ namespace Sandwich
                 return;
             }
 
+            if (SaveData.Exists(NAME_DATA_FILE))
+            {
+                m_index = SaveData.Load<int>(NAME_DATA_FILE);
+            }
+
             gridManager = ServiceLocator.Get<GridManager>();
             objectPooler = ServiceLocator.Get<ObjectPooler>();
 
@@ -71,6 +82,8 @@ namespace Sandwich
                 Debug.LogError("No more levels");
                 return;
             }
+
+            SaveData.Save<int>(m_index, NAME_DATA_FILE);
 
             if (m_levelText != null) m_levelText.text = "" + (m_index + 1);
 
