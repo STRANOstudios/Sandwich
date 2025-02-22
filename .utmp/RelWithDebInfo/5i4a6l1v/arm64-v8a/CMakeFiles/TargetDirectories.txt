@@ -1,0 +1,8 @@
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/CMakeFiles/edit_cache.dir
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/CMakeFiles/rebuild_cache.dir
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/GameActivity/CMakeFiles/game.dir
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+G:/School/2024-25/Sandwich/.utmp/RelWithDebInfo/5i4a6l1v/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

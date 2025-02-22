@@ -24,7 +24,9 @@ namespace Sandwich
 
             // Draw grid
             Gizmos.color = m_gridColor;
+#if UNITY_EDITOR
             Handles.color = m_gridColor;
+#endif
 
             if (GridNodes != null)
             {
@@ -34,8 +36,9 @@ namespace Sandwich
                     for (int y = 0; y < m_gridSize.y; y++)
                     {
                         Node node = GridNodes[x, y]; // Access node from the 2D array
-
+#if UNITY_EDITOR
                         Handles.Label(node.Position, $"({x}, {y})");
+#endif
 
                         switch (m_wordSpace)
                         {

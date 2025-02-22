@@ -55,9 +55,10 @@ namespace AndreaFrigerio.Framework
         public void OnUpdate()
         {
             HandlePlayerTurn();
-
-            UnityEditor.EditorUtility.SetDirty(this); // Forza la rielaborazione
+#if UNITY_EDITOR
+            UnityEditor.EditorUtility.SetDirty(this);
             UnityEditor.EditorApplication.QueuePlayerLoopUpdate();
+#endif
         }
 
         #endregion
