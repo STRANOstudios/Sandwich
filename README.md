@@ -71,7 +71,7 @@ Per copiare il repository da GitHub e configurare il progetto in Unity:
 ## Or take the last Build
 
 ### Release
-[Download](coming soon)
+[Download](https://github.com/STRANOstudios/Sandwich/releases/tag/V0.1.0)
 
 ## Deliverables
 - **APK per Android**
