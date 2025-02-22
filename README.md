@@ -1,14 +1,19 @@
-# PigeonBus README
- 
+# Sandwich! Clone README
 
 ## Overview
-Task
-Partendo dalla seguente immagine, sviluppa un sistema in cui:
-1. Il gioco ha una visuale isometrica e la Cam renderizza solo una piccola porzione di mappa intorno al Player che si aggiorna con la sua posizione
-2. Il bus si muove automaticamente seguendo la strada
-3. Si possono eseguire delle azioni speciali quali svoltare o fermarsi alle fermate se il giocatore preme un tasto che appare come UI in prossimità di luoghi specifici
-- Deve essere presente un Feedback positivo o negativo nel caso il giocatore abbia sbagliato input ( puoi decidere tu quali )
-4. Usando asset da internet, prova a dargli un’identità grafica ( Bonus )
+
+### Consegna
+Sviluppare un clone del gioco **Sandwich!**, basandosi sulla reference disponibile qui: [Sandwich! su Google Play](https://play.google.com/store/apps/details?id=com.popcore.makesandwich&hl=it).
+
+Il prototipo deve contenere almeno **tre livelli**. L'obiettivo del gioco è costruire un sandwich flippando gli ingredienti sulla griglia, uno alla volta. Il livello si completa quando tutti gli ingredienti sono impilati correttamente, con le due fette di pane che compongono la base e la cima della pila.
+
+### Feature
+- Griglia **4x4**
+- Due fette di pane per livello
+- Almeno **due diversi tipi di ingrediente**
+- Controllo tramite **tocco** (swipe per flippare l'ingrediente)
+- **Tasto per resettare** il livello
+- **Tasto per disfare** l'ultima mossa fatta
 
 ## Table of Contents
 - [Mechanics](#Mechanics)
@@ -19,54 +24,62 @@ Partendo dalla seguente immagine, sviluppa un sistema in cui:
 
 ## Mechanics
 
-### Interface
+### Gameplay
+Il giocatore deve selezionare gli ingredienti sulla griglia e flipparli con un movimento di **swipe** per impilarli correttamente. Il livello viene completato quando il sandwich è composto nella sequenza corretta, con il pane come base e come cima.
 
-The UI highlights the active module, health, equipped items, and on-screen interactions like hacking or puzzle-solving interfaces.
+### Interface
+L'interfaccia mostra:
+- La griglia di gioco
+- Il pulsante di **reset** per ricominciare il livello
+- Il pulsante **undo** per annullare l'ultima mossa
 
 ## Installation Instructions
 
-To copy from GitHub and build a Unity project without installing additional files, follow these general steps:
+Per copiare il repository da GitHub e configurare il progetto in Unity:
 
-### Clone the Repository:
+### Clone the Repository
+1. Aprire la pagina del repository su GitHub.
+2. Fare clic sul pulsante verde "Code" e selezionare **"Download ZIP"** (se non si ha Git installato) o usare il comando Git:
+   ```sh
+   git clone <repository_url>
+   ```
+3. Estrarre il file ZIP (se scaricato manualmente) e posizionarlo in una cartella dedicata.
 
-Open the GitHub repository page containing the Unity project.
-Click on the green "Code" button and select "Download ZIP" if you don't have Git installed, or use Git to clone the repository if you have it installed.
-If you downloaded the ZIP file, extract its contents to a dedicated folder on your computer.
-### Open Unity Hub:
+### Open Unity Hub
+1. Assicurarsi di avere **Unity Hub** installato.
+2. Aprire Unity Hub e fare clic su **"Add"** per aggiungere un nuovo progetto.
 
-Ensure you have Unity Hub installed on your machine. Unity Hub is a management tool for Unity projects.
-Open Unity Hub and click on the "Add" button to add a new project.
-### Select the Project:
+### Select the Project
+1. Navigare alla cartella contenente il progetto estratto o clonato.
+2. Selezionare la cartella e fare clic su **"Open"**.
+3. Se richiesto, installare la versione di Unity necessaria.
 
-Navigate to the folder where you extracted or cloned the Unity project.
-Select the project folder and click "Open" or "Select Folder."
-Install Unity Version (if needed):
+### Open the Project
+1. Una volta installata la versione di Unity corretta, aprire il progetto da Unity Hub.
+2. Controllare eventuali dipendenze mancanti o pacchetti da importare.
 
-If the Unity project requires a specific Unity version that you don't have installed, Unity Hub will prompt you to download and install the required version. Follow the prompts to install it.
-### Open the Project:
+### Build the Project
+1. Andare su **File** -> **Build Settings**.
+2. Selezionare la piattaforma **Android**.
+3. Fare clic su **Switch Platform** se necessario.
+4. Premere **Build** per generare il file APK.
 
-Once the Unity version is installed, click on the project thumbnail in Unity Hub to open the project.
-Resolve Dependencies (if needed):
-
-Unity projects may have dependencies or plugins. Check the project documentation or readme for any specific instructions on resolving dependencies. You might need to import certain assets or packages from the Unity Asset Store.
-### Build the Project:
-
-Once the project is open, go to "File" -> "Build Settings."
-Choose the target platform for your build (e.g., PC, Mac, Android, iOS).
-Click on "Switch Platform" if necessary.
-Click on "Build" to generate the executable or project files.
-### Run the Project:
-
-After building, you can run the project by executing the generated executable or running it directly from the Unity Editor.
-These steps should allow you to copy a Unity project from GitHub, set it up in Unity Hub, and build it without needing to install additional files beyond Unity Hub and the required Unity version. Note that specific projects may have unique requirements, so always check the project documentation for any additional instructions.
+### Run the Project
+- Dopo la build, installare il file APK su un dispositivo Android per testare il gioco.
+- In alternativa, eseguire il gioco direttamente dall'Editor Unity.
 
 ## Or take the last Build
 
 ### Release
+[Download](coming soon)
 
-[Download](https://github.com/STRANOstudios/PigeonBus/releases/tag/V.0.1.3)
+## Deliverables
+- **APK per Android**
+- **Link al repository GitHub pubblico**
+
+## Deadline
+**Scadenza:** 24/02/2025
 
 ## Credits
-
-**Andrea Frigerio**
+**Sviluppatore:** Andrea Frigerio
 
